@@ -75,7 +75,7 @@ export default function FullWidthGrid() {
         <div className={classes.root} style={{margin:"5px"}}>
       <Grid container spacing={3}>
         <Grid item xs={4}>
-          <Paper className={classes.paper} style={{height:"170px",backgroundSize:"cover", 
+          <Paper className={classes.paper} style={{"background-position-y":"top","backgroundPosition":"center",height:"160px",backgroundSize:"cover", 
       backgroundImage: `url("https://images.pexels.com/photos/450212/pexels-photo-450212.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")` 
     }}>
         
@@ -92,7 +92,7 @@ export default function FullWidthGrid() {
           
           <Grid item xs>
 
-          <p align="left">I regard myself as a person who is fascinated by challenges in all sorts of way, work or life, that is merely based on my belief that evolving and adapting to challenges is the whole concept of being competitive and that is what i want to bring to the workplace. With the less experience that i have only means i have more room for improvement especially in programming languages, I have taught myself a few and am willing to learn and be productive as a software developer.</p>
+          <label align="left">I regard myself as a person who is fascinated by challenges in all sorts of way, work or life, that is merely based on my belief that evolving and adapting to challenges is the whole concept of being competitive and that is what i want to bring to the workplace. With the less experience that i have only means i have more room for improvement especially in programming languages, I have taught myself a few and am willing to learn and be productive as a software developer.</label>
           
         </Grid>
         <Grid item xs={1}>
