@@ -81,7 +81,7 @@ export default function FullWidthGrid() {
       <Grid container spacing={3}>
         <Grid item xs={4}>
           <Paper className={classes.paper} style={{height:"160px",backgroundSize:"cover", 
-      backgroundImage: `url("https://images.pexels.com/photos/450212/pexels-photo-450212.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")` 
+      backgroundImage: `url("https://images.pexels.com/photos/432059/pexels-photo-432059.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260")` 
     }}>
         
 
@@ -96,7 +96,7 @@ export default function FullWidthGrid() {
   alignItems="baseline">
           
           <Grid item xs>
-
+<h1>Nathanael Zondo</h1>
           <label align="left">I regard myself as a person who is fascinated by challenges in all sorts of way, work or life, that is merely based on my belief that evolving and adapting to challenges is the whole concept of being competitive and that is what i want to bring to the workplace.</label>
           
         </Grid>
