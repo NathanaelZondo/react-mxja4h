@@ -119,7 +119,7 @@ export default function FullWidthGrid() {
       </Paper>
       
         <Grid item  xs={12} sm={6}>
-          <Paper className={classes.paper} elevation={1}>
+          <Paper className={classes.paper} elevation={}>
          <h2 style={{color:"black"}}>Tertiary Education</h2>
          <Divider />
          
@@ -128,15 +128,14 @@ export default function FullWidthGrid() {
          <label>Faculty: Information & Communication Technology(ICT)</label><br></br><br></br>
          <label>Level: final level</label>
 
-          </Paper>
-          <Paper><h2 style={{color:"black"}}>High School</h2>
+<h2 style={{color:"black"}}>High School</h2>
 <Divider />
 <p>School name   : Sibusiswe High School</p>
-<br></br>
-</Paper>
+
+          </Paper>
         </Grid>
         <Grid item  xs={12} sm={6}>
-          <Paper className={classes.paper} elevation={1}> 
+          <Paper className={classes.paper} elevation={0}> 
           <h2 style={{color:"black"}}>Work Experience</h2>
           <Divider />
          <label> Seasonal Chairman</label>
@@ -176,11 +175,12 @@ November 2</label>019 to January 2020
       <BorderLinearProgress variant="determinate" value={90} />
       <h3>Javascript</h3>
       <BorderLinearProgress variant="determinate" value={70} />
-<br></br>
+      <br></br><br></br>
     </div>
 
 
           </Paper>
+          <br></br><br></br>
           </div>
         </Grid>
     
