@@ -18,12 +18,13 @@ const useStyles = makeStyles((theme) => ({
     padding:4,
     width:"90%",
     alignItems:"center",
-    justifyContent:"center"
+    justifyContent:"center",
+    
   },
   paper: {
     padding: theme.spacing(2),
     textAlign: 'left',
-    color: "#1d2638",
+    color: theme.palette.text.primary,
   },
 }));
 
@@ -67,7 +68,7 @@ export default function FullWidthGrid() {
     
 <div align="center">
     <div className={classes.root} align="center">
-      
+      <br></br>
       <Grid container spacing={3}>
         <Paper>
         <Grid item xs={12}>
