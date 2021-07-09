@@ -1,5 +1,5 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles, withStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Divider from '@material-ui/core/Divider';
@@ -9,8 +9,8 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 import CallIcon from '@material-ui/icons/Call';
 import EmailIcon from '@material-ui/icons/Email';
 import InstagramIcon from '@material-ui/icons/Instagram';
-import Container from '@material-ui/core/Container';
-import Typography from '@material-ui/core/Typography';
+import LinearProgress from '@material-ui/core/LinearProgress';
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -23,13 +23,46 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     padding: theme.spacing(2),
     textAlign: 'left',
-    color: theme.palette.text.primary,
+    color: "#1d2638",
+  },
+}));
+
+const BorderLinearProgress = withStyles((theme) => ({
+  root: {
+    height: 10,
+    borderRadius: 5,
+  },
+  colorPrimary: {
+    backgroundColor: theme.palette.grey[theme.palette.type === 'light' ? 200 : 700],
+  },
+  bar: {
+    borderRadius: 5,
+    backgroundColor: '#1d2638',
+  },
+}))(LinearProgress);
+
+// Inspired by the former Facebook spinners.
+const useStylesFacebook = makeStyles((theme) => ({
+  root: {
+    position: 'relative',
+  },
+  bottom: {
+    color: theme.palette.grey[theme.palette.type === 'dark' ? 500 : 900],
+  },
+  top: {
+    color: '#1d2638',
+    animationDuration: '550ms',
+    position: 'absolute',
+    left: 0,
+  },
+  circle: {
+    strokeLinecap: 'round',
   },
 }));
 
 export default function FullWidthGrid() {
   const classes = useStyles();
-
+  const classe = useStylesFacebook();
   return (
     
 <div align="center">
@@ -127,16 +160,22 @@ November 2</label>019 to January 2020
         <Grid item xs={12} >
         <div>
           <Paper className={classes.paper} >
-         <h2 style={{color:"black"}}> WORK EXPERIENCE</h2>
+         <h2 style={{color:"black"}}> Skills Metricss</h2>
          <Divider />
          
-          <p>SEASONAL SALES ggggggggggggggfffffffffffffffffffffffffffffffffff</p>
-<p>Typo Vaal Mallft4444444ft44444444444444tgggggggggtttttttttg4tttttttttttg6</p>
-<p>November 2020 to February 2021t3bhhhhhhhhhhhhhbbbbbbbeyyyyyy6</p>
+         <div className={classes.root}>
+    
+      <h3>Python</h3>
+      <BorderLinearProgress variant="determinate" value={85} />
+      <h3>C++</h3>
+      <BorderLinearProgress variant="determinate" value={70} />
+      <h3>Typescript</h3>
+      <BorderLinearProgress variant="determinate" value={90} />
+      <h3>Javascript</h3>
+      <BorderLinearProgress variant="determinate" value={70} />
 
-<p>SEASONAL SALES ASSISTANT</p>
-<p>Typo Vaal Mall</p>
-<p>November 2019 to January 2020</p>
+    </div>
+
 
           </Paper>
           </div>
