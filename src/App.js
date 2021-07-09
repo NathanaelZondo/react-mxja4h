@@ -10,6 +10,11 @@ import CallIcon from '@material-ui/icons/Call';
 import EmailIcon from '@material-ui/icons/Email';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import LinearProgress from '@material-ui/core/LinearProgress';
+import SchoolIcon from '@material-ui/icons/School';
+import WorkIcon from '@material-ui/icons/Work';
+import PermIdentityIcon from '@material-ui/icons/PermIdentity';
+import RowingIcon from '@material-ui/icons/Rowing';
+import LocationCityIcon from '@material-ui/icons/LocationCity';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -120,7 +125,7 @@ export default function FullWidthGrid() {
       
         <Grid item  xs={12} sm={6}>
           <Paper className={classes.paper} elevation={}>
-         <h2 style={{color:"black"}}>Tertiary Education</h2>
+         <h2 style={{color:"black"}}><SchoolIcon style={{ fontSize: 20 } } />Tertiary Education</h2>
          <Divider />
          
          <label>Institution: Tshwane University Of Technology</label><br></br><br></br>
@@ -128,7 +133,7 @@ export default function FullWidthGrid() {
          <label>Faculty: Information & Communication Technology(ICT)</label><br></br><br></br>
          <label>Level: final level</label>
 
-<h2 style={{color:"black"}}>High School</h2>
+<h2 style={{color:"black"}}><LocationCityIcon style={{ fontSize: 20 } } />High School</h2>
 <Divider />
 <p>School name   : Sibusiswe High School</p>
 
@@ -136,7 +141,7 @@ export default function FullWidthGrid() {
         </Grid>
         <Grid item  xs={12} sm={6}>
           <Paper className={classes.paper} elevation={0}> 
-          <h2 style={{color:"black"}}>Work Experience</h2>
+          <h2 style={{color:"black"}}><WorkIcon style={{ fontSize: 20 } } />Work Experience</h2>
           <Divider />
          <label> Seasonal Chairman</label>
          <br></br><br></br>
@@ -155,14 +160,14 @@ Typo Vaal Mall
 </label>
 <br></br>
 <label>
-November 2</label>019 to January 2020
+November 2019 to January 2020</label>
 
 </Paper>
         </Grid>
         <Grid item xs={12} >
         <div>
           <Paper className={classes.paper} >
-         <h2 style={{color:"black"}}> Skills Metrics</h2>
+         <h2 style={{color:"black"}}><RowingIcon style={{ fontSize: 20 } } /> Skills Metrics</h2>
          <Divider />
          
          <div className={classes.root}>
