@@ -112,15 +112,15 @@ I regard myself as a person who is fascinated by challenges in all sorts of way,
 
 </Paper>
         </Grid>
-        <Grid  >
+        <Grid item xs={12} >
         <div>
-          <Paper className={classes.paper} style={{width:"100vh"}}>
+          <Paper className={classes.paper} >
          <h2 style={{color:"black"}}> WORK EXPERIENCE</h2>
          <Divider />
          
           <p>SEASONAL SALES ggggggggggggggfffffffffffffffffffffffffffffffffff</p>
-<p>Typo Vaal Mallft4444444ft44444444444444tgggggggggggggggggggggggg4ttttttttttg4tttttttttttg6</p>
-<p>November 2020 to February 2021</p>
+<p>Typo Vaal Mallft4444444ft44444444444444tgggggggggtttttttttg4tttttttttttg6</p>
+<p>November 2020 to February 2021t3bhhhhhhhhhhhhhbbbbbbbeyyyyyy6</p>
 
 <p>SEASONAL SALES ASSISTANT</p>
 <p>Typo Vaal Mall</p>
