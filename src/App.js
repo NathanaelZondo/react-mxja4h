@@ -1,81 +1,85 @@
 import React from 'react';
-import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles';
-import Drawer from '@material-ui/core/Drawer';
-import Button from '@material-ui/core/Button';
-import List from '@material-ui/core/List';
-import Divider from '@material-ui/core/Divider';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
+import Paper from '@material-ui/core/Paper';
+import Grid from '@material-ui/core/Grid';
 
-const useStyles = makeStyles({
-  list: {
-    width: 250,
+const useStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1,
   },
-  fullList: {
-    width: 'auto',
+  paper: {
+    padding: theme.spacing(2),
+    textAlign: 'center',
+    color: theme.palette.text.secondary,
   },
-});
+}));
 
-export default function TemporaryDrawer() {
+export default function FullWidthGrid() {
   const classes = useStyles();
-  const [state, setState] = React.useState({
-    top: false,
-    left: false,
-    bottom: false,
-    right: false,
-  });
-
-  const toggleDrawer = (anchor, open) => (event) => {
-    if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
-      return;
-    }
-
-    setState({ ...state, [anchor]: open });
-  };
-
-  const list = (anchor) => (
-    <div
-      className={clsx(classes.list, {
-        [classes.fullList]: anchor === 'top' || anchor === 'bottom',
-      })}
-      role="presentation"
-      onClick={toggleDrawer(anchor, false)}
-      onKeyDown={toggleDrawer(anchor, false)}
-    >
-      <List>
-        {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-            <ListItemText primary={text} />
-          </ListItem>
-        ))}
-      </List>
-      <Divider />
-      <List>
-        {['All mail', 'Trash', 'Spam'].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-            <ListItemText primary={text} />
-          </ListItem>
-        ))}
-      </List>
-    </div>
-  );
 
   return (
-    <div>
-      {['left', 'right', 'top', 'bottom'].map((anchor) => (
-        <React.Fragment key={anchor}>
-          <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
-          <Drawer anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
-            {list(anchor)}
-          </Drawer>
-        </React.Fragment>
-      ))}
+    <div className={classes.root}>
+      <Grid container spacing={3}>
+        <Grid item xs={12}>
+          
+          <Paper className={classes.paper}>
+          PERSONAL ATTRIBUTES
+
+I regard myself as a person who is fascinated by challenges in all sorts of way, work or life, that is merely based on my belief that evolving and adapting to challenges is the whole concept of being competitive and that is what i want to bring to the workplace. With the less experience that i have only means i have more room for improvement especially in programming languages, I have taught myself a few and am willing to learn and be productive as a software developer.
+
+
+
+
+          </Paper>
+        </Grid>
+      
+        <Grid item xs={6} sm={3}>
+          <Paper className={classes.paper}>
+         <h1> EDUCATION</h1>
+
+         <p>TERTIARY</p>
+
+         <p>Institution     : TSHWANE UNIVERSITY OF TECHNOLOGY</p>
+
+         <p>Course       : NDip: information Technology: Software development</p>
+
+         <p>Faculty       : Information & Communication Technology(ICT)</p>
+
+         <p>Level        : final level</p>
+
+<h2>HIGH SCHOOL</h2>
+
+<p>School name   : SIBUSISIWE HIGH SCHOOL</p>
+
+          </Paper>
+        </Grid>
+        <Grid item  sm={4}>
+          <Paper className={classes.paper}>  PERSONAL ATTRIBUTES
+<p>
+I regard myself as a person who is fascinated by challenges in all sorts of way, work or life, that is merely based on my belief that evolving and adapting to challenges is the whole concept of being competitive and that is what i want to bring to the workplace. With the less experience that i have only means i have more room for improvement especially in programming languages, I have taught myself a few and am willing to learn and be productive as a software developer.</p>
+
+<p>
+I regard myself as a person who is fascinated by challenges in all sorts of way, work or life, that is merely based on my belief that evolving and adapting to challenges is the whole concept of being competitive and that is what i want to bring to the workplace. With the less experience that i have only means i have more room for improvement especially in programming languages, I have taught myself a few and am willing to learn and be productive as a software developer.</p>
+
+
+</Paper>
+        </Grid>
+        <Grid item sm={5} >
+          <Paper className={classes.paper}>
+         <h1> WORK EXPERIENCE</h1>
+
+          <p>SEASONAL SALES ASSISTANT</p>
+<p>Typo Vaal Mall</p>
+<p>November 2020 to February 2021</p>
+
+<p>SEASONAL SALES ASSISTANT</p>
+<p>Typo Vaal Mall</p>
+<p>November 2019 to January 2020</p>
+
+          </Paper>
+        </Grid>
+    
+      </Grid>
     </div>
   );
 }
