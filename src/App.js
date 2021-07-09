@@ -22,8 +22,8 @@ const useStyles = makeStyles((theme) => ({
   },
   paper: {
     padding: theme.spacing(2),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
+    textAlign: 'left',
+    color: theme.palette.text.primary,
   },
 }));
 
@@ -85,30 +85,42 @@ export default function FullWidthGrid() {
       
         <Grid item  xs={12} sm={6}>
           <Paper className={classes.paper} elevation={0}>
-         <h2 style={{color:"black"}}> EDUCATION</h2>
+         <h2 style={{color:"black"}}>Tertiary Education</h2>
          <Divider />
-         <p>TERTIARY</p>
+         
+         <label>Institution: Tshwane University Of Technology</label><br></br><br></br>
+         <label>Course: NDip: information Technology: Software development</label><br></br><br></br>
+         <label>Faculty: Information & Communication Technology(ICT)</label><br></br><br></br>
+         <label>Level: final level</label>
 
-         <p>Institution: TSHWANE UNIVERSITY OF TECHNOLOGY</p>
-
-         <p>Course: NDip: information Technology: Software development</p>
-
-         <p>Faculty: Information & Communication Technology(ICT)</p>
-
-         <p>Level: final level</p>
-
-<h2>HIGH SCHOOL</h2>
-
-<p>School name   : SIBUSISIWE HIGH SCHOOL</p>
+<h2 style={{color:"black"}}>High School</h2>
+<Divider />
+<p>School name   : Sibusiswe High School</p>
 
           </Paper>
         </Grid>
         <Grid item  xs={12} sm={6}>
           <Paper className={classes.paper} elevation={0}> 
-          <h2 style={{color:"black"}}> ATTRIBUTES</h2>
+          <h2 style={{color:"black"}}>Work Experience</h2>
           <Divider />
-<p>
-I regard myself as a person who is fascinated by challenges in all sorts of way, work or life, that is merely based on my belief that evolving and adapting to challenges is the whole concept of being competitive and that is what i want to bring to the workplace. With the less experience that i have only means i have more room for improvement especially in programming languages, I have taught myself a few and am willing to learn and be productive as a software developer.</p>
+         <label> Seasonal Chairman</label>
+         <br></br><br></br>
+<label>Typo Vaal Mall</label>
+<br></br>
+<label>
+November 2020 to February 2021
+</label><br></br>
+<br></br>
+<label>
+Seasonal CEO
+</label>
+<br></br><br></br>
+<label>
+Typo Vaal Mall
+</label>
+<br></br>
+<label>
+November 2</label>019 to January 2020
 
 </Paper>
         </Grid>
