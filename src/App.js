@@ -29,12 +29,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor:"#def7ff"
     
   },
-  paper: {
-    padding: theme.spacing(2),
-    textAlign: 'left',
-    color: theme.palette.text.primary,
-    
-  },
+
 }));
 
 const BorderLinearProgress = withStyles((theme) => ({
@@ -118,11 +113,12 @@ export default function FullWidthGrid() {
 
 
 
-        <Grid item xs={3} style={{borderStyle:"solid",borderRight:"none",borderLeft:"none",borderBottom:"none",height:"75vh",}} >
+        <Grid item xs={3} style={{borderStyle:"solid",borderRight:"none",borderLeft:"none",borderBottom:"none",}} >
 
-          <div style={{height:"75vh",backgroundColor:"white"}}>
+          <div style={{height:"79vh",backgroundColor:"white",paddingLeft: "20px",
+    textAlign: 'left',}} >
 
-          <div className={classes.paper} style={{height:"22vh",backgroundColor:"white"}} >
+          <div  style={{height:"auto",backgroundColor:"white"}} >
           <br></br>
           <div style={{width:"auto"}}>
        <label style={{marginBottom:"17px"}} > <FacebookIcon  />nat@facebook.com </label> <br></br>
@@ -135,7 +131,7 @@ export default function FullWidthGrid() {
 
 
           </div>
-          <div className={classes.paper} style={{height:"25vh",backgroundColor:"white"}} >
+          <div className={classes.paper} style={{height:"auto",backgroundColor:"white"}} ><br></br><br></br>
           <label style={{color:"black"}}><RowingIcon style={{ fontSize: 20 } } /> Skills Metrics</label>
          <Divider style={{marginBottom:"15px"}} />
          
@@ -157,8 +153,8 @@ export default function FullWidthGrid() {
 
 
           </div>
-          <div className={classes.paper} style={{height:"20.5vh",backgroundColor:"white",}} >
-
+          <div className={classes.paper} style={{height:"auto",backgroundColor:"white",}} >
+          <br></br><br></br>
           <label style={{color:"black"}}><PeopleIcon style={{ fontSize: 20 } } />References</label>
          <Divider />
          <br></br>
@@ -175,9 +171,12 @@ export default function FullWidthGrid() {
           </div>
 
           </div>
+
+
         </Grid>
         <Grid item xs={8}>
-        <div className={classes.paper} style={{height:"75vh",backgroundColor:"white",borderStyle:"solid",borderBottom:"none",borderRight:"none",borderTop:"none"}} >
+        <div className={classes.paper} style={{backgroundColor:"white",borderStyle:"solid",borderBottom:"none",borderRight:"none",borderTop:"none", padding: "20px",
+    textAlign: 'left',height:"75vh"}} >
         <h2 style={{color:"black"}}><WorkIcon style={{ fontSize: 20 } } />Work Experience</h2>
           <Divider />
          <label> Seasonal Chairman</label>
