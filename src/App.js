@@ -42,7 +42,7 @@ const BorderLinearProgress = withStyles((theme) => ({
   },
   bar: {
     borderRadius: 5,
-    backgroundColor: '#75E3F9',
+    backgroundColor: '#004743',
   },
 }))(LinearProgress);
 
@@ -77,12 +77,12 @@ export default function FullWidthGrid() {
         <Grid item xs={3}>
          
             <div style={{backgroundColor:"#1f4f4a",height:"20vh",backgroundSize:"cover", 
-      backgroundImage: `url("https://images.pexels.com/photos/432059/pexels-photo-432059.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260")`}}>
+      backgroundImage: `url("https://images.pexels.com/photos/3766105/pexels-photo-3766105.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")`}}>
           
             </div>
-            <div  style={{backgroundColor:"yellow",height:"6.5vh",backgroundColor:"white",paddingTop:"5px",borderColor:"#75E3F9",borderBottom:"2px",borderStyle:""}}>
+            <div  style={{backgroundColor:"yellow",height:"6.5vh",backgroundColor:"white",paddingTop:"5px",borderColor:"#004743",borderBottom:"2px",borderStyle:""}}>
           
-              <h3>Software Developer</h3>
+              <h3 style={{color:"#004743"}}>Software Developer</h3>
               
              
             
@@ -94,13 +94,13 @@ export default function FullWidthGrid() {
          
          <div style={{backgroundColor:"white",height:"18.8vh",paddingLeft:"20px",paddingTop:"10px"}} align="left">
         
-           <h3>Profile</h3>
+           <h3 style={{color:"#004743"}}>Profile</h3>
            <label align="left">I regard myself as a person who is fascinated by challenges in all sorts of way, work or life, that is merely based on my belief that evolving and adapting to challenges is the whole concept of being competitive and that is what i want to bring to the workplace.</label>
          
          </div>
 
          
-         <div  style={{backgroundColor:"#75E3F9",height:"6.5vh",paddingTop:"5px"}}>
+         <div  style={{backgroundColor:"#004743",height:"6.5vh",paddingTop:"5px"}}>
        
          <h3 style={{color:"white"}}>Nathanael Zondo</h3>
          
@@ -113,7 +113,7 @@ export default function FullWidthGrid() {
 
 
 
-        <Grid item xs={3} style={{borderStyle:"solid",borderRight:"none",borderLeft:"none",borderBottom:"none",borderColor:"#75E3F9"}} >
+        <Grid item xs={3} style={{borderStyle:"solid",borderRight:"none",borderLeft:"none",borderBottom:"none",}} >
 
           <div style={{height:"79vh",backgroundColor:"white",paddingLeft: "20px",
     textAlign: 'left',}} >
@@ -176,8 +176,8 @@ export default function FullWidthGrid() {
         </Grid>
         <Grid item xs={8}>
         <div className={classes.paper} style={{backgroundColor:"white",borderStyle:"solid",borderBottom:"none",borderRight:"none",borderTop:"none", padding: "20px",
-    textAlign: 'left',height:"75vh"}} >
-        <h2 style={{color:"black"}}><WorkIcon style={{ fontSize: 20 } } />Work Experience</h2>
+    textAlign: 'left',height:"75vh",borderColor:"#004743"}} >
+        <h2 style={{color:"#004743"}}><WorkIcon style={{ fontSize: 20 } } />Work Experience</h2>
           <Divider />
          <label> Seasonal Chairman</label>
          <br></br><br></br>
@@ -200,7 +200,7 @@ November 2019 to January 2020</label>
 
 <br></br><br></br>
 
-<h2 style={{color:"black"}}><SchoolIcon style={{ fontSize: 20 } } />Tertiary Education</h2>
+<h2 style={{color:"#004743"}}><SchoolIcon style={{ fontSize: 20 } } />Tertiary Education</h2>
          <Divider />
          
          <label>Institution: Tshwane University Of Technology</label><br></br><br></br>
@@ -209,7 +209,7 @@ November 2019 to January 2020</label>
          <label>Level: final level</label>
 
 <br></br><br></br>
-<h2 style={{color:"black"}}><LocationCityIcon style={{ fontSize: 20 } } />High School</h2>
+<h2 style={{color:"#004743"}}><LocationCityIcon style={{ fontSize: 20 } } />High School</h2>
 <Divider />
 <br></br>
 <label>School name  : Sibusiswe High School</label>
