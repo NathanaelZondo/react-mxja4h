@@ -15,6 +15,8 @@ import WorkIcon from '@material-ui/icons/Work';
 import PermIdentityIcon from '@material-ui/icons/PermIdentity';
 import RowingIcon from '@material-ui/icons/Rowing';
 import LocationCityIcon from '@material-ui/icons/LocationCity';
+import AssignmentIcon from '@material-ui/icons/Assignment';
+import PeopleIcon from '@material-ui/icons/People';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -95,9 +97,10 @@ export default function FullWidthGrid() {
         </Grid>
         <Grid item xs={9}>
          
-         <div style={{backgroundColor:"red",height:"20vh",paddingLeft:"20px"}} align="left">
+         <div style={{backgroundColor:"white",height:"18.8vh",paddingLeft:"20px",paddingTop:"10px"}} align="left">
         
-           
+           <h3>Profile</h3>
+           <label align="left">I regard myself as a person who is fascinated by challenges in all sorts of way, work or life, that is merely based on my belief that evolving and adapting to challenges is the whole concept of being competitive and that is what i want to bring to the workplace.</label>
          
          </div>
 
@@ -116,13 +119,15 @@ export default function FullWidthGrid() {
 
 
         <Grid item xs={3} >
-          <div className={classes.paper} style={{height:"22vh",backgroundColor:"grey"}} >
-          <h3 style={{color:"black"}}><SchoolIcon style={{ fontSize: 20 } } />Tertiary Education</h3>
-         <Divider />
-         
-         <label>Institution: Tshwane University Of Technology</label><br></br>
-         <label>Course: NDip: information Technology: Software development</label><br></br><br></br>
-        
+          <div className={classes.paper} style={{height:"22vh",backgroundColor:"white"}} >
+          <br></br>
+          <div style={{width:"auto"}}>
+       <label style={{marginBottom:"17px"}} > <FacebookIcon  />nat@facebook.com </label> <br></br>
+       <label> <TwitterIcon  />  nat@twitter.com </label><br></br>
+       <label> <CallIcon /> 0607854002 </label>  <br></br>
+       <label> <EmailIcon  />nat@gmail.com  </label>  <br></br>
+       <label> <InstagramIcon  /> nat@instagram.com </label> 
+          </div>
 
 
 
@@ -136,23 +141,74 @@ export default function FullWidthGrid() {
       <label style={{marginBottom:"50px"}}>Python</label>
       <BorderLinearProgress variant="determinate" value={85} style={{marginBottom:"10px"}} />
      
-      <label>Python</label>
+      <label> C++</label>
       <BorderLinearProgress variant="determinate" value={70} style={{marginBottom:"10px"}} />
      
-      <label>Python</label>
+      <label>Javascript</label>
       <BorderLinearProgress variant="determinate" value={90} style={{marginBottom:"10px"}} />
      
-      <label>Python</label>
+      <label>Typescript</label>
       <BorderLinearProgress variant="determinate" value={70} />
    
 
 
 
           </div>
-          <div className={classes.paper} style={{height:"20.5vh",backgroundColor:"pink"}} >xs=6</div>
+          <div className={classes.paper} style={{height:"20.5vh",backgroundColor:"white"}} >
+
+          <label style={{color:"black"}}><PeopleIcon style={{ fontSize: 20 } } />References</label>
+         <Divider />
+         <br></br>
+         <label>Mr Sbanyoni</label><br></br>
+         <label>Cell:0112853310</label><br></br>
+         <label>Email:sbanyi@gmail.com</label><br></br><br></br>
+
+         <label>Mrs Moletzi</label><br></br>
+         <label>Cell:0112853310</label><br></br>
+         <label>Email:molo32@gmail.com</label><br></br><br></br>
+
+
+
+          </div>
         </Grid>
         <Grid item xs={9}>
-        <div className={classes.paper} style={{height:"75vh",backgroundColor:"green"}} >xs=6</div>
+        <div className={classes.paper} style={{height:"75vh",backgroundColor:"white"}} >
+        <h2 style={{color:"black"}}><WorkIcon style={{ fontSize: 20 } } />Work Experience</h2>
+          <Divider />
+         <label> Seasonal Chairman</label>
+         <br></br><br></br>
+<label>Typo Vaal Mall</label>
+<br></br>
+<label>
+November 2020 to February 2021
+</label><br></br>
+<br></br>
+<label>
+Seasonal CEO
+</label>
+<br></br><br></br>
+<label>
+Typo Vaal Mall
+</label>
+<br></br>
+<label>
+November 2019 to January 2020</label>
+
+
+<h2 style={{color:"black"}}><SchoolIcon style={{ fontSize: 20 } } />Tertiary Education</h2>
+         <Divider />
+         
+         <label>Institution: Tshwane University Of Technology</label><br></br><br></br>
+         <label>Course: NDip: information Technology: Software development</label><br></br><br></br>
+         <label>Faculty: Information & Communication Technology(ICT)</label><br></br><br></br>
+         <label>Level: final level</label>
+
+<h2 style={{color:"black"}}><LocationCityIcon style={{ fontSize: 20 } } />High School</h2>
+<Divider />
+<p>School name   : Sibusiswe High School</p>
+
+
+        </div>
         </Grid>
         
       </Grid>
