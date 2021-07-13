@@ -85,7 +85,7 @@ export default function FullWidthGrid() {
       backgroundImage: `url("https://images.pexels.com/photos/432059/pexels-photo-432059.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260")`}}>
           
             </div>
-            <div  style={{backgroundColor:"yellow",height:"6.5vh",backgroundColor:"white",paddingTop:"0px",borderColor:"black",borderStyle:"inset"}}>
+            <div  style={{backgroundColor:"yellow",height:"6.5vh",backgroundColor:"white",paddingTop:"5px",borderColor:"black",borderBottom:"2px",borderStyle:""}}>
           
               <h3>Software Developer</h3>
               
@@ -118,7 +118,7 @@ export default function FullWidthGrid() {
 
 
 
-        <Grid item xs={3} >
+        <Grid item xs={3} style={{borderStyle:"solid",borderRight:"none",borderLeft:"none",borderBottom:"none"}} >
           <div className={classes.paper} style={{height:"22vh",backgroundColor:"white"}} >
           <br></br>
           <div style={{width:"auto"}}>
@@ -154,7 +154,7 @@ export default function FullWidthGrid() {
 
 
           </div>
-          <div className={classes.paper} style={{height:"20.5vh",backgroundColor:"white"}} >
+          <div className={classes.paper} style={{height:"20.5vh",backgroundColor:"white",}} >
 
           <label style={{color:"black"}}><PeopleIcon style={{ fontSize: 20 } } />References</label>
          <Divider />
@@ -172,7 +172,7 @@ export default function FullWidthGrid() {
           </div>
         </Grid>
         <Grid item xs={9}>
-        <div className={classes.paper} style={{height:"75vh",backgroundColor:"white"}} >
+        <div className={classes.paper} style={{height:"75vh",backgroundColor:"white",borderStyle:"solid",borderBottom:"none",borderRight:"none"}} >
         <h2 style={{color:"black"}}><WorkIcon style={{ fontSize: 20 } } />Work Experience</h2>
           <Divider />
          <label> Seasonal Chairman</label>
@@ -213,7 +213,7 @@ November 2019 to January 2020</label>
 <label>Start Year   : 2008</label>
 <br></br>
 <label>End  Year     : 2014</label>
-<br></br>
+
         </div>
         </Grid>
         
