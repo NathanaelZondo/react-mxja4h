@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     padding:4,
-    width:"75%",
+    width:"80%",
     alignItems:"center",
     justifyContent:"center",
     backgroundColor:"#def7ff"
@@ -95,7 +95,7 @@ export default function FullWidthGrid() {
 
          
         </Grid>
-        <Grid item xs={9}>
+        <Grid item xs={8}>
          
          <div style={{backgroundColor:"white",height:"18.8vh",paddingLeft:"20px",paddingTop:"10px"}} align="left">
         
@@ -118,7 +118,10 @@ export default function FullWidthGrid() {
 
 
 
-        <Grid item xs={3} style={{borderStyle:"solid",borderRight:"none",borderLeft:"none",borderBottom:"none"}} >
+        <Grid item xs={3} style={{borderStyle:"solid",borderRight:"none",borderLeft:"none",borderBottom:"none",height:"75vh",}} >
+
+          <div style={{height:"75vh",backgroundColor:"white"}}>
+
           <div className={classes.paper} style={{height:"22vh",backgroundColor:"white"}} >
           <br></br>
           <div style={{width:"auto"}}>
@@ -170,8 +173,10 @@ export default function FullWidthGrid() {
 
 
           </div>
+
+          </div>
         </Grid>
-        <Grid item xs={9}>
+        <Grid item xs={8}>
         <div className={classes.paper} style={{height:"75vh",backgroundColor:"white",borderStyle:"solid",borderBottom:"none",borderRight:"none",borderTop:"none"}} >
         <h2 style={{color:"black"}}><WorkIcon style={{ fontSize: 20 } } />Work Experience</h2>
           <Divider />
