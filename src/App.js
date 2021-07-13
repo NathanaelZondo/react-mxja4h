@@ -21,15 +21,17 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     padding:4,
-    width:"90%",
+    width:"75%",
     alignItems:"center",
     justifyContent:"center",
+    backgroundColor:"#def7ff"
     
   },
   paper: {
     padding: theme.spacing(2),
     textAlign: 'left',
     color: theme.palette.text.primary,
+    
   },
 }));
 
@@ -71,125 +73,52 @@ export default function FullWidthGrid() {
   const classe = useStylesFacebook();
   return (
     
-<div align="center">
-    <div className={classes.root} align="center">
-      <br></br>
-      <Grid container spacing={3}>
-        <Paper>
-        <Grid item xs={12}>
-        <div className={classes.root} style={{margin:"5px"}}>
-      <Grid container spacing={3}>
-        <Grid item xs={4}>
-          <Paper className={classes.paper} style={{height:"160px",backgroundSize:"cover", 
-      backgroundImage: `url("https://images.pexels.com/photos/432059/pexels-photo-432059.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260")` 
-    }}>
-        
-
-
-
-      
-          </Paper>
-        </Grid>
-        <Grid item xs container
-  direction="row"
-  justifyContent="flex-end"
-  alignItems="baseline">
+<div align="center" style={{backgroundColor:"#e6f1f2"}}>
+    <div className={classes.root} align="center" style={{backgroundColor:"#e6f1f2"}}>
+    
+    <Grid container spacing={0}>
+        <Grid item xs={3}>
+         
+            <div style={{backgroundColor:"#1f4f4a",height:"20vh"}}>Good morning
+            <br></br><br></br><br></br> <br></br><br></br><br></br>
+            </div>
+            <div  style={{backgroundColor:"yellow"}}>
           
-          <Grid item xs>
-<h1>Nathanael Zondo</h1>
-          <label align="left">I regard myself as a person who is fascinated by challenges in all sorts of way, work or life, that is merely based on my belief that evolving and adapting to challenges is the whole concept of being competitive and that is what i want to bring to the workplace.</label>
-          
-        </Grid>
-        <Grid item xs={1}>
-          <div style={{width:"5px"}}>
-        <FacebookIcon />
-        <TwitterIcon  />
-        <CallIcon />
-        <EmailIcon  />
-        <InstagramIcon  />
-          </div>
-        </Grid>
+              hihi
+              <br></br><br></br><br></br>
+            
+            </div>
 
-
-
+         
         </Grid>
+        <Grid item xs={9}>
+         
+         <div style={{backgroundColor:"red",height:"20vh"}}>Good morning
+         <br></br><br></br><br></br> <br></br><br></br><br></br>
+         </div>
+         <div  style={{backgroundColor:"yellow"}}>
        
-      </Grid>
-  
-    </div>
+           hihi
+           <br></br><br></br><br></br>
+         
+         </div>
 
-
-          
-        </Grid>
-      </Paper>
       
-        <Grid item  xs={12} sm={6}>
-          <Paper className={classes.paper} elevation={}>
-         <h2 style={{color:"black"}}><SchoolIcon style={{ fontSize: 20 } } />Tertiary Education</h2>
-         <Divider />
-         
-         <label>Institution: Tshwane University Of Technology</label><br></br><br></br>
-         <label>Course: NDip: information Technology: Software development</label><br></br><br></br>
-         <label>Faculty: Information & Communication Technology(ICT)</label><br></br><br></br>
-         <label>Level: final level</label>
+     </Grid>
 
-<h2 style={{color:"black"}}><LocationCityIcon style={{ fontSize: 20 } } />High School</h2>
-<Divider />
-<p>School name   : Sibusiswe High School</p>
 
-          </Paper>
+
+
+        <Grid item xs={3} >
+          <div className={classes.paper} style={{height:"75vh",backgroundColor:"blue"}} >xs=6</div>
         </Grid>
-        <Grid item  xs={12} sm={6}>
-          <Paper className={classes.paper} elevation={0}> 
-          <h2 style={{color:"black"}}><WorkIcon style={{ fontSize: 20 } } />Work Experience</h2>
-          <Divider />
-         <label> Seasonal Chairman</label>
-         <br></br><br></br>
-<label>Typo Vaal Mall</label>
-<br></br>
-<label>
-November 2020 to February 2021
-</label><br></br>
-<br></br>
-<label>
-Seasonal CEO
-</label>
-<br></br><br></br>
-<label>
-Typo Vaal Mall
-</label>
-<br></br>
-<label>
-November 2019 to January 2020</label>
-
-</Paper>
+        <Grid item xs={9}>
+        <div className={classes.paper} style={{height:"75vh",backgroundColor:"green"}} >xs=6</div>
         </Grid>
-        <Grid item xs={12} >
-        <div>
-          <Paper className={classes.paper} >
-         <h2 style={{color:"black"}}><RowingIcon style={{ fontSize: 20 } } /> Skills Metrics</h2>
-         <Divider />
-         
-         <div className={classes.root}>
-    
-      <h3>Python</h3>
-      <BorderLinearProgress variant="determinate" value={85} />
-      <h3>C++</h3>
-      <BorderLinearProgress variant="determinate" value={70} />
-      <h3>Typescript</h3>
-      <BorderLinearProgress variant="determinate" value={90} />
-      <h3>Javascript</h3>
-      <BorderLinearProgress variant="determinate" value={70} />
-      <br></br><br></br>
-    </div>
-
-
-          </Paper>
-          <br></br><br></br>
-          </div>
-        </Grid>
-    
+        
       </Grid>
+
+
     </div>
     </div>
   );
