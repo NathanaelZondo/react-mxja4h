@@ -83,10 +83,11 @@ export default function FullWidthGrid() {
       backgroundImage: `url("https://images.pexels.com/photos/432059/pexels-photo-432059.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260")`}}>
           
             </div>
-            <div  style={{backgroundColor:"yellow"}}>
+            <div  style={{backgroundColor:"yellow",height:"6.5vh",backgroundColor:"white",paddingTop:"5px"}}>
           
-              hihi
-              <br></br><br></br><br></br>
+              <h3>Software Developer</h3>
+              
+             
             
             </div>
 
@@ -94,15 +95,17 @@ export default function FullWidthGrid() {
         </Grid>
         <Grid item xs={9}>
          
-         <div style={{backgroundColor:"red",height:"20vh"}}>
-         <br></br><br></br>
-           Good morning
-         <br></br><br></br><br></br> <br></br><br></br><br></br>
+         <div style={{backgroundColor:"red",height:"20vh",paddingLeft:"20px"}} align="left">
+        
+           
+         
          </div>
-         <div  style={{backgroundColor:"yellow"}}>
+
+         
+         <div  style={{backgroundColor:"black",height:"6.5vh",paddingTop:"5px"}}>
        
-           hihi
-           <br></br><br></br><br></br>
+         <h3 style={{color:"white"}}>Nathanael Zondo</h3>
+         
          
          </div>
 
@@ -113,8 +116,39 @@ export default function FullWidthGrid() {
 
 
         <Grid item xs={3} >
-          <div className={classes.paper} style={{height:"22vh",backgroundColor:"blue"}} >xs=6</div>
-          <div className={classes.paper} style={{height:"25vh",backgroundColor:"white"}} >xs=6</div>
+          <div className={classes.paper} style={{height:"22vh",backgroundColor:"grey"}} >
+          <h3 style={{color:"black"}}><SchoolIcon style={{ fontSize: 20 } } />Tertiary Education</h3>
+         <Divider />
+         
+         <label>Institution: Tshwane University Of Technology</label><br></br>
+         <label>Course: NDip: information Technology: Software development</label><br></br><br></br>
+        
+
+
+
+          </div>
+          <div className={classes.paper} style={{height:"25vh",backgroundColor:"white"}} >
+          <label style={{color:"black"}}><RowingIcon style={{ fontSize: 20 } } /> Skills Metrics</label>
+         <Divider style={{marginBottom:"15px"}} />
+         
+        
+    
+      <label style={{marginBottom:"50px"}}>Python</label>
+      <BorderLinearProgress variant="determinate" value={85} style={{marginBottom:"10px"}} />
+     
+      <label>Python</label>
+      <BorderLinearProgress variant="determinate" value={70} style={{marginBottom:"10px"}} />
+     
+      <label>Python</label>
+      <BorderLinearProgress variant="determinate" value={90} style={{marginBottom:"10px"}} />
+     
+      <label>Python</label>
+      <BorderLinearProgress variant="determinate" value={70} />
+   
+
+
+
+          </div>
           <div className={classes.paper} style={{height:"20.5vh",backgroundColor:"pink"}} >xs=6</div>
         </Grid>
         <Grid item xs={9}>
