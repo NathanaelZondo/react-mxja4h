@@ -85,7 +85,7 @@ export default function FullWidthGrid() {
       backgroundImage: `url("https://images.pexels.com/photos/432059/pexels-photo-432059.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260")`}}>
           
             </div>
-            <div  style={{backgroundColor:"yellow",height:"6.5vh",backgroundColor:"white",paddingTop:"5px"}}>
+            <div  style={{backgroundColor:"yellow",height:"6.5vh",backgroundColor:"white",paddingTop:"0px",borderColor:"black",borderStyle:"inset"}}>
           
               <h3>Software Developer</h3>
               
