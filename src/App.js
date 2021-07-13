@@ -42,7 +42,7 @@ const BorderLinearProgress = withStyles((theme) => ({
   },
   bar: {
     borderRadius: 5,
-    backgroundColor: '#1d2638',
+    backgroundColor: '#75E3F9',
   },
 }))(LinearProgress);
 
@@ -80,7 +80,7 @@ export default function FullWidthGrid() {
       backgroundImage: `url("https://images.pexels.com/photos/432059/pexels-photo-432059.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260")`}}>
           
             </div>
-            <div  style={{backgroundColor:"yellow",height:"6.5vh",backgroundColor:"white",paddingTop:"5px",borderColor:"black",borderBottom:"2px",borderStyle:""}}>
+            <div  style={{backgroundColor:"yellow",height:"6.5vh",backgroundColor:"white",paddingTop:"5px",borderColor:"#75E3F9",borderBottom:"2px",borderStyle:""}}>
           
               <h3>Software Developer</h3>
               
@@ -100,7 +100,7 @@ export default function FullWidthGrid() {
          </div>
 
          
-         <div  style={{backgroundColor:"black",height:"6.5vh",paddingTop:"5px"}}>
+         <div  style={{backgroundColor:"#75E3F9",height:"6.5vh",paddingTop:"5px"}}>
        
          <h3 style={{color:"white"}}>Nathanael Zondo</h3>
          
@@ -113,7 +113,7 @@ export default function FullWidthGrid() {
 
 
 
-        <Grid item xs={3} style={{borderStyle:"solid",borderRight:"none",borderLeft:"none",borderBottom:"none",}} >
+        <Grid item xs={3} style={{borderStyle:"solid",borderRight:"none",borderLeft:"none",borderBottom:"none",borderColor:"#75E3F9"}} >
 
           <div style={{height:"79vh",backgroundColor:"white",paddingLeft: "20px",
     textAlign: 'left',}} >
