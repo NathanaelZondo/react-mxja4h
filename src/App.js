@@ -194,6 +194,7 @@ Typo Vaal Mall
 <label>
 November 2019 to January 2020</label>
 
+<br></br><br></br>
 
 <h2 style={{color:"black"}}><SchoolIcon style={{ fontSize: 20 } } />Tertiary Education</h2>
          <Divider />
@@ -203,11 +204,16 @@ November 2019 to January 2020</label>
          <label>Faculty: Information & Communication Technology(ICT)</label><br></br><br></br>
          <label>Level: final level</label>
 
+<br></br><br></br>
 <h2 style={{color:"black"}}><LocationCityIcon style={{ fontSize: 20 } } />High School</h2>
 <Divider />
-<p>School name   : Sibusiswe High School</p>
-
-
+<br></br>
+<label>School name  : Sibusiswe High School</label>
+<br></br>
+<label>Start Year   : 2008</label>
+<br></br>
+<label>End  Year     : 2014</label>
+<br></br>
         </div>
         </Grid>
         
