@@ -94,7 +94,9 @@ export default function FullWidthGrid() {
         </Grid>
         <Grid item xs={9}>
          
-         <div style={{backgroundColor:"red",height:"20vh"}}>Good morning
+         <div style={{backgroundColor:"red",height:"20vh"}}>
+         <br></br><br></br>
+           Good morning
          <br></br><br></br><br></br> <br></br><br></br><br></br>
          </div>
          <div  style={{backgroundColor:"yellow"}}>
