@@ -79,8 +79,9 @@ export default function FullWidthGrid() {
     <Grid container spacing={0}>
         <Grid item xs={3}>
          
-            <div style={{backgroundColor:"#1f4f4a",height:"20vh"}}>Good morning
-            <br></br><br></br><br></br> <br></br><br></br><br></br>
+            <div style={{backgroundColor:"#1f4f4a",height:"20vh",backgroundSize:"cover", 
+      backgroundImage: `url("https://images.pexels.com/photos/432059/pexels-photo-432059.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260")`}}>
+          
             </div>
             <div  style={{backgroundColor:"yellow"}}>
           
@@ -110,7 +111,9 @@ export default function FullWidthGrid() {
 
 
         <Grid item xs={3} >
-          <div className={classes.paper} style={{height:"75vh",backgroundColor:"blue"}} >xs=6</div>
+          <div className={classes.paper} style={{height:"22vh",backgroundColor:"blue"}} >xs=6</div>
+          <div className={classes.paper} style={{height:"25vh",backgroundColor:"white"}} >xs=6</div>
+          <div className={classes.paper} style={{height:"20.5vh",backgroundColor:"pink"}} >xs=6</div>
         </Grid>
         <Grid item xs={9}>
         <div className={classes.paper} style={{height:"75vh",backgroundColor:"green"}} >xs=6</div>
